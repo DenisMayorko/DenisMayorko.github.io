@@ -1,51 +1,49 @@
-BODY{
-    -ms-overflow-style: -ms-autohiding-scrollbar;
-    overflow: -moz-scrollbars-none;
-    -webkit-overflow-scrolling: touch;
-    font-family: "century gothic","trebuchet ms","franklin gothic",sans-serif;
+body{
     overflow-x: hidden;
-    -webkit-tap-highlight-color:  transparent
+    margin: 0;
+    font-family: "century gothic","trebuchet ms","franklin gothic",sans-serif
 }
-
-body,html{
-    margin: 0
-}
-
 .head{
     width: 100%;
+    height: 710px;
     text-align: center;
-    text-shadow: 0 0 2px #abc;
-    padding-top: 3em;
-    overflow: hidden
+    text-shadow: 0 0 2px #abc
 }
-.head img{
+.rat{
     position: fixed;
     right: -32em;
-    top: 9em;
+    top: 12em;
     transform: rotate(-9deg);
     width: 900px;
     z-index: 9;
     image-rendering: pixelated;
     transition: all 0.5s ease
 }
+.stankin{
+    width: 9em;
+    position: relative;
+    right: 1em;
+    bottom: -1em
+}
 .hid{
     right: -200%!important;
     top: 40em!important
 }
-.head img:hover{
+.rat:hover{
     transform: rotate(-3deg)
 }
 .active{
     color: #002!important;
     margin: 1em 9px!important;
-    font-weight: 900
+    font-weight: 900;
+    box-shadow: none!important
 }
 .filler{
-    height: 242px
+    height: 150px;
 }
 .head p{
-    font-size: 8px;
-    max-width: 777px;
+    font-size: 7px;
+    max-width: 700px;
     margin: 0 auto;
     padding: 0 2em
 }
@@ -54,6 +52,89 @@ h2{
 }
 h2,h4{
     text-shadow: 0 0 2px #aaf;
+    text-align: center
+}
+.reviews{
+    text-align: center
+}
+.rev{
+    display: inline-block;
+    font-weight: 900;
+    margin: 9px
+}
+.rev *{
+    display: inline-block;
+    padding: 9px
+}
+.rev:before {
+    content: open-quote;
+    font-size: 3em;
+    text-align: center;
+    color: #ddf;
+    position: relative
+}
+.rev:after {
+    content: close-quote;
+    font-size: 3em;
+    text-align: center;
+    color: #ddf;
+    position: relative
+}
+.rev-user{
+    font-weight: 100;
+    font-size: 12px;
+    font-style: italic
+}
+.pic-1{
+    width: 13em;
+    float: left;
+    border-bottom: 1px solid #88a;
+    border-radius: 9%
+}
+.pic-2{
+    width: 11em;
+    float: right;
+    position: relative;
+    bottom: 81px
+}
+.pic-3{
+    display: inline-block;
+    width: 16em
+}
+.techno{
+    text-align: right;
+    max-width: 640px;
+    font-size: 0.8em;
+    display: inline-block
+}
+.team{
+    text-align: center
+}
+.mem{
+    display: inline-block;
+    margin: 9px
+}
+.mem img{
+    width: 99px;
+    position: relative;
+    bottom: 0;
+    transition: all 0.5s ease
+}
+.mem img:hover{
+    bottom: 9px;
+    transform: scale(1.1);
+}
+.mem div{
+    font-weight: 900;
+    text-shadow: 0 0 2px #aaf
+}
+.mem ul{
+    font-style: italic;
+    max-width: 9em;
+    font-size: 10px;
+    text-align: left;
+    margin: 0;
+    padding: 0 0 0 2em
 }
 .nav{
     width: 200px;
@@ -70,21 +151,12 @@ h2,h4{
     text-decoration: none;
     box-sizing: border-box;
     margin: 9px 0;
-    font-size: 24px;
     font-style: normal;
     box-shadow: 0 0 1px;
-    border-radius: 50%;
     padding: 0 5px 2px;
     vertical-align: middle;
     color: inherit;
     transition: all 2s ease
-}
-.nav span{
-    font-style: italic;
-    text-shadow: 0 0 1px #88a;
-    position: relative;
-    top: 0;
-    transition: top 0.5s ease
 }
 .block:nth-child(odd){
     background: #779;
@@ -102,10 +174,18 @@ h2,h4{
     box-sizing: border-box;
     margin: 0 auto
 }
+.func{
+    text-align: center;
+    margin: 2em 0
+}
+.lab strike{
+    color:#000
+}
 .image{
     width: 90%;
     text-align: center;
-    margin: 0 auto
+    margin: 0 auto;
+    display: inline-block
 }
 .image img{
     max-width: 100%;
@@ -114,35 +194,36 @@ h2,h4{
     padding: 9px;
     background: #557
 }
+.pointerl,.pointerr{
+    width: 9%;
+    position: relative;
+    top: 4em
+}
+.pointerl{
+    float: left;
+    right: 1em
+}
+.pointerr{
+    float: right;
+    left: 2em
+}
+.tech{
+    text-align: center
+}
+.tech img{
+    height: 6em;
+    margin: 1em
+}
 .block:nth-child(even) .image img{
     box-shadow: 0 0 1px #000;
     background: #fff
-}
-table{
-    width: 100%;
-    border-collapse: collapse;
-    border-radius: 1em;
-    overflow: hidden;
-    font-size: inherit
-}
-tr{
-    box-shadow: 0 0 1px #aaa
-}
-tr:nth-child(odd){
-    background: #dde
-}
-tr:nth-child(even){
-    background: #fff
-}
-th,td{
-    padding: 9px
 }
 hr{
     border-radius: 50%;
     padding: 1px;
     margin-bottom: 2em
 }
-.block:nth-child(9){
+.block:nth-child(7){
     margin: 0
 }
 .footer {
@@ -191,24 +272,18 @@ hr{
         font-size: 11px;
         padding: 0 2em
     }
-    .head img{
+    .rat{
         width: 600px;
-        top: 18em
+        top: 22em
     }
-}
-
-#bugs {
-    height: 300px;
-    width: 60%;
-    margin: 0 auto;
-    text-align: center
-}
-
-#bugs button{
-    background: #696;
-    border-radius: 1em;
-    font-family: inherit;
-    padding: 1em;
-    color: inherit;
-    cursor: pointer
+    .filler{
+        height: 240px
+    }
+    .pic-2{
+        bottom: 31px;
+        width: 9em
+    }
+    .pointerl,.pointerr{
+        display: none
+    }
 }
